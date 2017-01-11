@@ -1,0 +1,21 @@
+body{
+    background-color: green;
+}
+
+.container{
+    min-width: 550px;
+    margin: 7px;
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+li{
+    border: 1px solid red;
+    min-width: 200px;
+    list-style: none;
+    height: 25px;
+}
