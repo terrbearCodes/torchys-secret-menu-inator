@@ -1,14 +1,15 @@
 {
-  "manifest_version": 2,
+    "manifest_version": 2,
 
-  "name": "Secret Menu-inator",
-  "description": "A convenience extension to allow you to browse to the secret menu item's when ordering Torchy's online (because typing the url is too taxing).",
-  "version": "1.0",
+    "name": "Secret Menu-inator",
+    "description": "A convenience extension to allow you to browse to the secret menu item's when ordering Torchy's online (because typing the url is too taxing).",
+    "version": "1.0",
 
-  "browser_action": {
-    "default_popup": "popup.html"
-  },
-  "permissions": [
-    "activeTab"
-  ]
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_icon": "devil_head.png"
+    },
+    "permissions": [
+        "activeTab"
+    ]
 }
