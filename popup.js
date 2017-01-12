@@ -1,9 +1,5 @@
 const torchysOrderPage = 'https://order.torchystacos.com/torchys';
 
-document.addEventListener('DOMContentLoaded', function() {
-    console.log('Things happening')
-});
-
 document.querySelector('#goto').addEventListener('click', function(e) {
     chrome.tabs.create({ url: torchysOrderPage });
     window.close();
@@ -19,5 +15,14 @@ chrome.tabs.query({ active: true }, function(tabs) {
     if (pageUrl.startsWith(torchysOrderPage) && parts[4]) {
         document.querySelector('.menu').classList.toggle('hide-it');
         document.querySelector('.navigation').classList.toggle('hide-it');
+    }
+
+    const menuItems = document.querySelectorAll('.menu .button');
+    for (var i in menuItems) {
+        menuItems[i].addEventListener('click', function(e) {
+            console.log(this.dataset.path);
+            chrome.tabs.update({ url: `${pageUrl}/m${this.dataset.path}` });
+            window.close();
+        })
     }
 })
