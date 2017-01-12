@@ -2,6 +2,7 @@ body {
     background-color: #bf2e1a;
     min-width: 425px;
     min-height: 175px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 .menu {
@@ -21,7 +22,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: whitesmoke;
+    cursor: pointer;
 }
 
 .hide-it {
@@ -34,4 +35,9 @@ body {
 
 .navigation>.button {
     background: #4b4949;
+    color: whitesmoke;
+}
+
+.xxx {
+    filter: blur(5px);
 }
