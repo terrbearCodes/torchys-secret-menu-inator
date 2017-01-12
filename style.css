@@ -1,7 +1,7 @@
 body {
     background-color: #bf2e1a;
-    min-width: 550px;
-    min-height: 250px;
+    min-width: 425px;
+    min-height: 175px;
 }
 
 .menu {
@@ -9,15 +9,29 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-content: space-around;
 }
 
 .button {
-    border: 1px solid red;
+    border: 3px solid #f7a11a;
+    border-radius: 3px;
     min-width: 200px;
-    list-style: none;
-    height: 25px;
+    height: 35px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
 }
 
 .hide-it {
     display: none;
+}
+
+.menu>.button {
+    background: #e1e1e1;
+}
+
+.navigation>.button {
+    background: #4b4949;
 }
