@@ -1,23 +1,22 @@
 <!doctype html>
-<!--
- This page is shown when the extension button is cacked, because the
- "browser_action" field in manifest.json contains the "default_popup" key with
- value "popup.html".
- -->
 <html>
-  <head>
+
+<head>
     <title>Getting Started Extension's Popup</title>
     <link rel="stylesheet" href="style.css">
-    <!--
-      - JavaScript and HTML must be in separate files: see our Content Security
-      - Poacy documentation[1] for details and explanation.
-      -
-      - [1]: https://developer.chrome.com/extensions/contentSecurityPoacy
-     -->
-  </head>
-  <body>
+</head>
+
+<body>
     <h3>Secret Menu</h3>
-    <div class = 'container'>
+    <div class="navigation">
+        <div>
+            Place Order
+        </div>
+        <div>
+            Order From Last
+        </div>
+    </div>
+    <div class='menu hide-it'>
         <div class='button'><a>Mad Cow</a></div>
         <div class='button'><a>Matador</a></div>
         <div class='button'><a>Ace Of Spades</a></div>
@@ -26,6 +25,6 @@
         <div class='button'><a>Hillbilly Style</a></div>
     </div>
     <script src="./popup.js"></script>
-  </body>
-</html>
+</body>
 
+</html>

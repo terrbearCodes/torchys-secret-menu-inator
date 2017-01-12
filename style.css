@@ -1,17 +1,23 @@
-body{
-    background-color: green;
+body {
+    background-color: #bf2e1a;
+    min-width: 550px;
+    min-height: 250px;
 }
 
-.container{
+.menu {
     min-width: 550px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.button{
+.button {
     border: 1px solid red;
     min-width: 200px;
     list-style: none;
     height: 25px;
+}
+
+.hide-it {
+    display: none;
 }
