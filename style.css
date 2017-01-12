@@ -1,41 +1,47 @@
 body {
     background-color: #bf2e1a;
     min-width: 425px;
-    min-height: 175px;
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-family: "Lucida Console", Monaco, monospace;
 }
 
 .menu {
     min-width: 550px;
+}
+
+.items {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-content: space-around;
 }
 
 .button {
     border: 3px solid #f7a11a;
     border-radius: 3px;
-    min-width: 200px;
+    width: 200px;
     height: 35px;
     margin-top: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    box-shadow: 4px 5px 3px #033003;
 }
 
 .hide-it {
     display: none;
 }
 
-.menu>.button {
+.items>.button {
     background: #e1e1e1;
 }
 
 .navigation>.button {
     background: #4b4949;
     color: whitesmoke;
+}
+
+img {
+    margin: 3px;
 }
 
 .xxx {

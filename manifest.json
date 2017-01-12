@@ -7,7 +7,8 @@
 
     "browser_action": {
         "default_popup": "popup.html",
-        "default_icon": "devil_head.png"
+        "default_icon": "devil_head.png",
+        "default_title": "Order From \nTorchy's Secret Menu"
     },
     "permissions": [
         "activeTab"
