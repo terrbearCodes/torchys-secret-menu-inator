@@ -21,7 +21,7 @@ chrome.tabs.query({ active: true }, function(tabs) {
     for (var i in menuItems) {
         menuItems[i].addEventListener('click', function(e) {
             console.log(this.dataset.path);
-            chrome.tabs.update({ url: `${pageUrl}/m${this.dataset.path}` });
+            chrome.tabs.update({ url: `${torchysOrderPage}/${parts[4]}/m${this.dataset.path}` });
             window.close();
         })
     }
