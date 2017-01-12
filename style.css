@@ -4,16 +4,12 @@ body{
 
 .container{
     min-width: 550px;
-    margin: 7px;
-}
-
-ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-li{
+.button{
     border: 1px solid red;
     min-width: 200px;
     list-style: none;
