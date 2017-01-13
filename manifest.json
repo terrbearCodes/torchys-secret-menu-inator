@@ -10,6 +10,12 @@
         "default_icon": "devil_head.png",
         "default_title": "Order From \nTorchy's Secret Menu"
     },
+    "content_scripts": [
+        {
+            "matches": ["https://order.torchystacos.com/torchys/*/"],
+            "js": ["urlAnalyzer.js"]
+        }
+    ],
     "permissions": [
         "activeTab",
         "storage"
