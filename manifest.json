@@ -11,6 +11,7 @@
         "default_title": "Order From \nTorchy's Secret Menu"
     },
     "permissions": [
-        "activeTab"
+        "activeTab",
+        "storage"
     ]
 }

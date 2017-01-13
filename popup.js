@@ -1,5 +1,18 @@
 const torchysOrderPage = 'https://order.torchystacos.com/torchys';
 
+chrome.storage.sync.get('storeLocation', function(items){
+    console.log(items);
+    const lastLocation = document.querySelector('#orderlast');
+    if(!items.storeLocation){
+        lastLocation.classList.toggle('hide-it');
+    }else{
+        lastLocation.addEventListener('click', function(e){
+            chrome.tabs.create({url: `${torchysOrderPage}/${items.storeLocation}`});
+            window.close();
+        })
+    }
+})
+
 document.querySelector('#goto').addEventListener('click', function(e) {
     chrome.tabs.create({ url: torchysOrderPage });
     window.close();
@@ -13,16 +26,21 @@ chrome.tabs.query({ active: true }, function(tabs) {
 
 
     if (pageUrl.startsWith(torchysOrderPage) && parts[4]) {
-        document.querySelector('.menu').classList.toggle('hide-it');
-        document.querySelector('.navigation').classList.toggle('hide-it');
+        chrome.storage.sync.set({'storeLocation': parts[4]}, function(items){
+            document.querySelector('.menu').classList.toggle('hide-it');
+            document.querySelector('.navigation').classList.toggle('hide-it');
+
+            const menuItems = document.querySelectorAll('.menu .button');
+            for (var i in menuItems) {
+                menuItems[i].addEventListener('click', function(e) {
+                    console.log(this.dataset.path);
+                    chrome.tabs.update({ url: `${torchysOrderPage}/${parts[4]}/m${this.dataset.path}` });
+                    window.close();
+                })
+            }
+        })
+        
     }
 
-    const menuItems = document.querySelectorAll('.menu .button');
-    for (var i in menuItems) {
-        menuItems[i].addEventListener('click', function(e) {
-            console.log(this.dataset.path);
-            chrome.tabs.update({ url: `${torchysOrderPage}/${parts[4]}/m${this.dataset.path}` });
-            window.close();
-        })
-    }
+    
 })

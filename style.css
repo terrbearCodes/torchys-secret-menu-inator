@@ -38,6 +38,8 @@ body {
 .navigation>.button {
     background: #4b4949;
     color: whitesmoke;
+    width: 85%;
+    margin: 10px auto;
 }
 
 img {
@@ -45,5 +47,5 @@ img {
 }
 
 .xxx {
-    filter: blur(5px);
+    filter: blur(4px);
 }
