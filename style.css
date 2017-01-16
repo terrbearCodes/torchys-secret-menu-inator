@@ -1,5 +1,5 @@
 body {
-    background-color: #bf2e1a;
+    background: url(assets/tortilla.jpg) no-repeat fixed center;
     min-width: 425px;
     font-family: "Lucida Console", Monaco, monospace;
 }
