@@ -1,7 +1,6 @@
 const torchysOrderPage = 'https://order.torchystacos.com/torchys';
 
 chrome.storage.sync.get('storeLocation', function(items){
-    console.log(items);
     const lastLocation = document.querySelector('#orderlast');
     if(!items.storeLocation){
         lastLocation.classList.toggle('hide-it');

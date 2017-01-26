@@ -1,7 +1,8 @@
 body {
-    background: url(assets/tortilla.jpg) no-repeat fixed center;
-    min-width: 425px;
+    background: url(assets/tortilla_small.png);
+    min-width: 550px;
     font-family: "Lucida Console", Monaco, monospace;
+    padding-bottom: 1px;
 }
 
 .menu {
@@ -38,8 +39,9 @@ body {
 .navigation>.button {
     background: #4b4949;
     color: whitesmoke;
-    width: 85%;
+    width: 75%;
     margin: 10px auto;
+    font-size: 15px;
 }
 
 img {
@@ -48,4 +50,10 @@ img {
 
 .xxx {
     filter: blur(4px);
+}
+
+h3{
+  color: #bf2e1a;
+  margin: auto;
+  font-size: 18px;
 }
