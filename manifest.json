@@ -7,7 +7,7 @@
 
     "browser_action": {
         "default_popup": "popup.html",
-        "default_icon": "assets/devil_head.png",
+        "default_icon": "assets/logo.png",
         "default_title": "Order From \nTorchy's Secret Menu"
     },
     "content_scripts": [
