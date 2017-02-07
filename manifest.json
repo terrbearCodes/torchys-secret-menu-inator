@@ -2,8 +2,11 @@
     "manifest_version": 2,
 
     "name": "Secret Menu-inator",
-    "description": "A convenience extension to allow you to browse to the secret menu item's when ordering Torchy's online (because typing the url is too taxing).",
+    "description": "A convenience extension to allow ordering from the secret menu when ordering Torchy's online.",
     "version": "0.1.0",
+    "icons":{
+        "128": "assets/logo.png"
+    },
 
     "browser_action": {
         "default_popup": "popup.html",
